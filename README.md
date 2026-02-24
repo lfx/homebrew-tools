@@ -52,3 +52,23 @@ To upgrade a specific tool:
 ```sh
 brew upgrade mac-port-bar
 ```
+
+## Running as a Service
+
+Since `mac-port-bar` is a menu bar utility, you likely want it to run continuously in the background. You can use Homebrew Services to start it automatically upon login:
+
+To start the service:
+
+```sh
+brew services start mac-port-bar
+```
+
+To stop the service:
+
+```sh
+brew services stop mac-port-bar
+```
+
+## Maintaining this Tap
+
+See [NEW_AND_UPDATE.md](NEW_AND_UPDATE.md) for instructions on how to add new formulas, update existing ones, and validate changes.

@@ -19,6 +19,13 @@ class MacPortBar < Formula
     bin.install "mac-port-bar"
   end
 
+  service do
+    run opt_bin/"mac-port-bar"
+    keep_alive true
+    log_path var/"log/mac-port-bar.log"
+    error_log_path var/"log/mac-port-bar.log"
+  end
+
   test do
     assert_path_exists bin/"mac-port-bar"
     assert_predicate bin/"mac-port-bar", :executable?
