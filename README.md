@@ -7,8 +7,7 @@ A custom [Homebrew](https://brew.sh/) tap for my personal tools and utilities.
 | Tool | Description |
 | --- | --- |
 | **[mac-port-bar](https://github.com/lfx/mac-port-bar)** | A lightweight macOS menu bar utility that automatically scans for and lists locally running HTTP services. |
-
-*(More tools will be added here in the future)*
+| **[go-show-md](https://github.com/lfx/go-show-md)** | A lightweight macOS markdown file viewer and navigator. |
 
 ## Installation
 
@@ -28,6 +27,7 @@ Then, you can install any tool from the tap just like a standard Homebrew packag
 
 ```sh
 brew install mac-port-bar
+brew install go-show-md
 ```
 
 ### Option 2: Install directly
@@ -36,6 +36,7 @@ Alternatively, you can install a tool in a single command without explicitly tap
 
 ```sh
 brew install lfx/tools/mac-port-bar
+brew install lfx/tools/go-show-md
 ```
 
 ## Updating
