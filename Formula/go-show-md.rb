@@ -5,20 +5,20 @@
 class GoShowMd < Formula
   desc "Lightweight macOS markdown file viewer and navigator"
   homepage "https://github.com/lfx/go-show-md"
-  version "1.0.4"
+  version "1.0.5"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/lfx/go-show-md/releases/download/v1.0.4/go-show-md_Darwin_x86_64.tar.gz"
-    sha256 "2bdcccb87c36af33e1657a882362a5f9bbe56754f6712f8b038bb17f1b2f01a5"
+    url "https://github.com/lfx/go-show-md/releases/download/v1.0.5/go-show-md_Darwin_x86_64.tar.gz"
+    sha256 "d48dee310a582fa7795787ce8eed5bffebfc317f8d183f29fa9009c4aa32fef4"
 
     define_method(:install) do
       bin.install "go-show-md"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/lfx/go-show-md/releases/download/v1.0.4/go-show-md_Darwin_arm64.tar.gz"
-    sha256 "bafa509dafc60a0b1c95f1f4ecc50fecf9c33d622e16dcd134d534e8c5293430"
+    url "https://github.com/lfx/go-show-md/releases/download/v1.0.5/go-show-md_Darwin_arm64.tar.gz"
+    sha256 "ff6f6f4e92162bd2bd50b779f15cb280bddd0d67e21fb39f71083e3a0dcdfd11"
 
     define_method(:install) do
       bin.install "go-show-md"
